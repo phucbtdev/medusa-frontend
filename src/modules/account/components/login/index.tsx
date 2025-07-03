@@ -3,6 +3,7 @@ import { LOGIN_VIEW } from "@modules/account/templates/login-template"
 import ErrorMessage from "@modules/checkout/components/error-message"
 import { SubmitButton } from "@modules/checkout/components/submit-button"
 import Input from "@modules/common/components/input"
+import { GoogleLoginButton } from "components/GoogleLoginButton"
 import { useActionState } from "react"
 
 type Props = {
@@ -45,6 +46,7 @@ const Login = ({ setCurrentView }: Props) => {
         <SubmitButton data-testid="sign-in-button" className="w-full mt-6">
           Sign in
         </SubmitButton>
+        <GoogleLoginButton />
       </form>
       <span className="text-center text-ui-fg-base text-small-regular mt-6">
         Not a member?{" "}
